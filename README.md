@@ -6,8 +6,14 @@ Rust (Tauri 2) 后端 + React 19 GUI 的桌面环境变量管理工具：
 ## 让程序用上环境变量（npm 包 env-manager-loader）
 
 ```bash
-npm i -g ./npm/env-manager-loader        # 全局安装一次，得到 envmanager 命令
+# 方式一：从 GitHub 直接安装（无需 npm 账号）
+npm i -g github:hdppppppp/env#pkg
+
+# 方式二：本地目录安装
+npm i -g ./npm/env-manager-loader
 ```
+
+包源码在 `pkg` 分支（由 `scripts/sync-pkg.ps1` 从主分支同步）；改了包代码后重新运行该脚本即可。
 
 **Node 程序**——启动即自动加载（放在 package.json scripts 里）：
 
