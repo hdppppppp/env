@@ -1,0 +1,12 @@
+node_modules/
+dist/
+src-tauri/target/
+src-tauri/gen/
+*.local
+*.exe
+*.dll
+*.emvault
+.env
+.env.demo
+.envref
+pnpm-lock.yaml

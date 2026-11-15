@@ -1,0 +1,1 @@
+# 本项目使用 windows-gnu 工具链（见 rust-toolchain.toml），mingw-w64 gcc 在 PATH 中
