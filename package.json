@@ -1,0 +1,32 @@
+{
+  "name": "env-manager-loader",
+  "version": "0.1.0",
+  "description": "加载 env-manager 管理的 .env：require 即注入 process.env；附带 envmanager CLI，可为任意程序（node/go/python…）注入环境后启动",
+  "main": "index.js",
+  "module": "index.mjs",
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js"
+    }
+  },
+  "bin": {
+    "envmanager": "cli.js"
+  },
+  "files": [
+    "index.js",
+    "index.mjs",
+    "cli.js",
+    "README.md"
+  ],
+  "keywords": [
+    "env",
+    "dotenv",
+    "environment",
+    "env-manager"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=16"
+  }
+}
